@@ -55,3 +55,17 @@ Modellen som ligger i Supabase ser slik ut:
 Det ligger noen ferdiglagde spørringer i `lib/supabaseQueries.js`.
 
 Disse kan brukes direkte, eller brukes som inspirasjon til egne spørringer
+
+En står fritt frem til å gå egne veier med denne oppgaven, men her er noen forslag til features som kan implementeres.
+
+### Forslag til features
+- Vis frem alle meldinger som finnes i chatten
+- Lag input felt og knapp for å sende dine egne meldinger til chatten
+- Gjør slik at en ikke trenger skrive inn brukernavn hver gang/brukernavn autofylles inn
+- Lag mulighet for å svare på en melding (bruk reply_to feltet for en Message)
+- Legg på styling så en kan se hvilke meldinger som er svar/replies
+- Lag felt for å opprette en Topic
+- Lag egne rom med meldinger som bare hører til i samme Topic
+- Legg til animasjoner for når det kommer inn nye meldinger
+- Mulighet for å søke etter meldinger på innhold eller brukernavn
+- Sortere meldinger etter tid/bruker
