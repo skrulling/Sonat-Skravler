@@ -1,7 +1,14 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 
 const config = {
-	plugins: [sveltekit()]
+	plugins: [
+		sveltekit(),
+	],
+	build: {
+	},
+	optimizeDeps: {
+
+	}
 };
 
 export default config;

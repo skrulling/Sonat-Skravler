@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabaseClient'
 
 export async function LoadAllMessages(){
-    return await supabase.from('Messages').select(`
+    return supabase.from('Messages').select(`
         id,
         created_at,
         user,
@@ -14,7 +14,7 @@ export async function LoadAllMessages(){
 }
 
 export async function LoadAllTopics(){
-    return await supabase.from('Topic').select('*');
+    return supabase.from('Topic').select('*');
 }
 
 export async function SendMessage(username, message, topic = 1) {
