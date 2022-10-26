@@ -69,3 +69,4 @@ En står fritt frem til å gå egne veier med denne oppgaven, men her er noen fo
 - Legg til animasjoner for når det kommer inn nye meldinger
 - Mulighet for å søke etter meldinger på innhold eller brukernavn
 - Sortere meldinger etter tid/bruker
+- En toast/snackbar som viser feilmeldinger til bruker
