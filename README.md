@@ -58,7 +58,7 @@ Disse kan brukes direkte, eller brukes som inspirasjon til egne spørringer
 
 En står fritt frem til å gå egne veier med denne oppgaven, men her er noen forslag til features som kan implementeres.
 
-### Forslag til features
+## Forslag til features
 - Vis frem alle meldinger som finnes i chatten
 - Lag input felt og knapp for å sende dine egne meldinger til chatten
 - Gjør slik at en ikke trenger skrive inn brukernavn hver gang/brukernavn autofylles inn
@@ -70,3 +70,9 @@ En står fritt frem til å gå egne veier med denne oppgaven, men her er noen fo
 - Mulighet for å søke etter meldinger på innhold eller brukernavn
 - Sortere meldinger etter tid/bruker
 - En toast/snackbar som viser feilmeldinger til bruker
+
+### Tips
+
+Prosjektet kommer med Tailwind satt opp. Dette gjør det en hel del raskere å få på plass CSS.
+
+[DOCS](https://tailwindcss.com/docs/utility-first)
