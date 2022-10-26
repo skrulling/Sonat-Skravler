@@ -1,11 +1,9 @@
 <script>
   import { onMount } from 'svelte'
   import { supabase } from '../lib/supabaseClient'
-  import { LoadAllMessages, SendMessage } from '../lib/supabaseQueries'
+  import { LoadAllMessages } from '../lib/supabaseQueries'
 
   let messages = []
-  let messageText = ''
-  let userName = ''
 
   function handleInserts(payload) {
     messages = [...messages, payload.new]
@@ -19,6 +17,7 @@
   // Fetching all existing messages
   const { data: initialMessages } = await LoadAllMessages()
   messages = initialMessages;
+  console.log(messages);
 
   // Setting up realtime listening for new messages
   supabase
@@ -30,46 +29,12 @@
 
 </script>
 <h1>Velkommen til Sonat Skravler</h1>
-{#each messages as message}
-  <div>
-    <div class="container center-vert">
-      <p class="username">{message.user}</p>
-      <p class="date">{new Date(message.created_at).toLocaleString()}</p>
-    </div>
-    <p>{message.message}</p>
-  </div>
-{/each}
-
-<div class="input-area container flex-column">
-  <input bind:value={userName} placeholder="Ditt brukername (påkrevd felt)"/>
-  <input bind:value={messageText} placeholder="Melding..." type="text"/>
-  <button on:click={() => SendMessage(userName, messageText)}>Send melding</button>
-</div>
-
-<style>
-  .container {
-    display: flex;
-  }
-
-  .center-vert {
-    align-items: center;
-  }
-
-  .flex-column {
-    flex-direction: column;
-  }
-
-  .username {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .date {
-    font-style: italic;
-    font-weight: lighter;
-    margin-left: 10px;
-  }
-  .input-area {
-    max-width: 50vw;
-  }
-</style>
+<br>
+<p>Dette er for øyeblikket en nesten helt tom side</p>
+<p>Målet med denne oppgaven er at du skal lage din egen Chat app ved bruk av Svelte 🔥</p>
+<br>
+<p>Om du tar en titt i console log, så skal det ligge noen meldinger der, dersom ting er satt riktig opp</p>
+<p>Du står fritt frem til å lage hva du vil. Det ligger noen forslag til features i README.</p>
+<p>Vi foreslår at du begynner med å vise frem de eksisterende meldingene på skjermen, så kan du se om du får sendt noe meldinger selv 😎</p>
+<br>
+<p>Lykke til! 🙌</p>
